@@ -1,0 +1,72 @@
+<!-- <?xml version="1.0"> -->
+<!-- Manipulator -->
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="parametric_arm">
+
+    <!-- Colors -->
+    <!-- Inspired from nordtheme.com -->
+    <xacro:macro name="blue_color" params="alpha">
+        <material name="blue">
+            <color rgba="0.369 0.506 0.674 ${alpha}"/>
+        </material>
+    </xacro:macro>
+
+    <xacro:macro name="white_color" params="alpha">
+        <material name="white">
+            <color rgba="0.898 0.913 0.941 ${alpha}"/>
+        </material>
+    </xacro:macro>
+
+    <xacro:macro name="black_color" params="alpha">
+        <material name="black">
+            <color rgba="0.263 0.298 0.369 ${alpha}"/>
+        </material>
+    </xacro:macro>
+
+    <xacro:macro name="red_color" params="alpha">
+        <material name="red">
+            <color rgba="0.749 0.380 0.410 ${alpha}"/>
+        </material>
+    </xacro:macro>
+
+    <xacro:macro name="orange_color" params="alpha">
+        <material name="orange">
+            <color rgba="0.815 0.529 0.439 ${alpha}"/>
+        </material>
+    </xacro:macro>
+
+    <xacro:macro name="yellow_color" params="alpha">
+        <material name="yellow">
+            <color rgba="0.921 0.796 0.545 ${alpha}"/>
+        </material>
+    </xacro:macro>
+
+    <xacro:macro name="green_color" params="alpha">
+        <material name="green">
+            <color rgba="0.639 0.745 0.549 ${alpha}"/>
+        </material>
+    </xacro:macro>
+
+    <xacro:macro name="violet_color">
+        <material name="violet">
+            <color rgba="0.705 0.557 0.678"/>
+        </material>
+    </xacro:macro>
+
+    <xacro:macro name="box_visual" params="size">
+            <visual>
+                <origin xyz="0 0 0" rpy="0 0 0" />
+                <geometry>
+                    <box size="${size}" />
+                </geometry>
+                <xacro:blue_color alpha="1"/>
+            </visual>
+    </xacro:macro>
+
+    <xacro:macro name="box_collision" params="size">
+            <collision>
+                <origin xyz="0 0 0" rpy="0 0 0" />
+                <geometry>
+                    <box size="${size}" />
+                </geometry>
+            </collision>
+    </xacro:macro>
