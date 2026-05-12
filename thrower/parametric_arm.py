@@ -66,7 +66,7 @@ tail = path + "./thrower/model/xacro/tail_arm.xml"
 
 testModel = XacroGenerator(header, definition, tail)
 xacroOutPath = "/tmp/tmpArm.xml"
-urdfOutPath = path + "./model/parametricArm.urdf"
+urdfOutPath = path + "./thrower/modified_model/parametricArm.urdf"
 
 # Defining the default parameters
 params = {

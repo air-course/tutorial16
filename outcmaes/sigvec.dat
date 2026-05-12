@@ -1,3 +1,0 @@
-% # columns="iteration, evaluation, sigma, beta, void,  sigvec==sigma_vec.scaling factors from diagonal decoding", seed=677195, Tue May 12 16:09:30 2026, <python>{}</python>
-2 20 0.3555593576702471 1 0 1.0 0.7323788578371434
-3 30 0.47420081087771077 1 0 0.699352697186295 0.5679854352623023
