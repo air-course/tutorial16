@@ -1,0 +1,9 @@
+casadi==3.7.2
+cma==4.4.4
+geco==1.0.7
+ipython==8.12.3
+matplotlib==3.10.9
+numpy==2.4.4
+pinocchio==0.4.3
+pybullet==3.2.7
+robomeshcat==1.1.4
