@@ -78,6 +78,11 @@ def build(params):
     testModel.buildXacroModel(xacroOutPath, params)
     testModel.buildURDFModel(xacroOutPath, urdfOutPath)
 
+def build_to(params, xacro_out, urdf_out):
+    """Like build(), but writes to caller-specified paths (safe for parallel use)."""
+    testModel.buildXacroModel(xacro_out, params)
+    testModel.buildURDFModel(xacro_out, urdf_out)
+
 if __name__ == "__main__":
 
     build(params)
