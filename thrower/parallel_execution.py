@@ -7,8 +7,8 @@ def _worker_fn(args):
     candidate, traj_opt_class, kwargs = args
     pid = os.getpid()
     traj_opt = traj_opt_class(
-        xacro_out=f"/tmp/tmpArm_{pid}.xml",
-        urdf_out=f"/tmp/parametricArm_{pid}.urdf",
+        xacro_out=f"./tmp/tmpArm_{pid}.xml",
+        urdf_out=f"./tmp/parametricArm_{pid}.urdf",
         **kwargs,
     )
     fitness_val = traj_opt.fitness(candidate)
